@@ -1,0 +1,237 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{ 
+	background: #efefef;
+	font: 14px Arial, Helvetica, sans-serif;
+	color: #393939;
+	overflow-x: hidden;
+	margin-bottom: 90px;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+header, section, footer, article, nav, aside {
+	display:block ;
+}
+
+a {
+	color: #1e1e1e;
+	text-decoration: none; 
+}
+
+a:hover {
+	color: #1e1e1e;
+	text-decoration: underline;
+}
+
+.relative { position: relative }
+.cleft { clear: left }
+.cright { clear: right }
+.cboth { clear: both }
+.fleft { float: left !important }
+.fright { float: right !important }
+.nofloat { float: none }
+.center { text-align: center ;}
+.left { text-align: left }
+.right { text-align: right }
+.ohidden { overflow: hidden }
+.nomargin { margin: 0 }
+.margin { margin: 15px }
+.nomargin-right { margin-right: 0 }
+.margin-right { margin-right: 15px }
+.nomargin-left { margin-left: 0 }
+.margin-left { margin-left: 15px }
+.nomargin-top { margin-top: 0 }
+.margin-top { margin-top: 15px }
+.nomargin-bottom { margin-bottom: 0 }
+.margin-bottom { margin-bottom: 15px }
+.padding { padding: 10px }
+.padding-top { padding-top: 10px }
+.padding-right { padding-right: 10px }
+.padding-bottom { padding-bottom: 10px }
+.padding-left { padding-left: 10px }
+.nopadding { padding: 0 }
+.nopadding-top { padding-top: 0 }
+.nopadding-right { padding-right: 0 }
+.nopadding-bottom { padding-bottom: 0 }
+.nopadding-left { padding-left: 0 }
+.underline { text-decoration: underline }
+.border { border: 1px solid #dadada }
+.border-top{ border-top: 1px solid #dadada }
+.border-right { border-right: 1px solid #dadada }
+.border-bottom { border-bottom: 1px solid #dadada }
+.border-left { border-left: 1px solid #dadada }
+.border-radius {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+textarea { resize: none }
+iframe {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+	font-family: 'Share', cursive;
+	letter-spacing: -2px;
+}
+
+.date { display: none }
+
+.img-rounded { 
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+.telefone {
+	position: relative;
+	background: url(../images/iphone.png) no-repeat top right;
+	width: 300px;
+	height: 554px;
+	float: right
+}
+
+.telefone .tela {
+	width: 230px;
+	height: 405px;
+	position: relative;
+	margin: 63px 0 0 34px;
+}
+
+
+/* FOOTER
+-------------------------------------------------- */
+.base {
+	padding: 30px 0 20px; 
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #efefef 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#efefef 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#efefef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background: #393939;
+  color: #FFF;
+  padding: 20px 0;
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+/* NAVBAR
+-------------------------------------------------- */
+.navbar { 
+	margin-bottom: 0;
+	background: #000;
+	padding: 5px 0;
+	min-height: 30px;
+}
+
+.navbar-default { border: none } 
+
+.navbar .navbar-brand {	float: none !important }
+
+
+/* CAROUSEL COMPANIES
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel { height: 300px }
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  left: 15%;
+  right: 15%;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+  background-color: #777;
+}
+
+.carousel a { 
+	color: #FFF;
+	text-decoration: none;
+}
+
+.carousel .item.dopamina { background: #FFF100 }
+.carousel .item.pandemia { background: #EC008B }
+.carousel .item.army { background: #00ADEF }
+
+.carousel .item .carousel-caption { text-shadow: none }
+
+.carousel .item.dopamina .carousel-caption,
+.carousel .item.dopamina a { color: #005A31 !important }
+
+.carousel-indicators li {
+	border-color: #FFF;
+	background-color: #FFF;
+	opacity: 0.5;
+}
+
+.carousel-indicators .active { 
+	background-color: #FFF;
+	opacity: 1;
+}
+
+.carousel-control {
+    width: 14px;
+	height: 60px;
+	margin-top: 130px;
+    background: url(../images/index/btn_sliders.png) no-repeat !important;
+}
+
+.carousel-control.left { 
+	margin-left: 15px;
+	background-position: top left !important;
+}
+.carousel-control.right { 
+	margin-right: 15px;
+	background-position: bottom left !important;
+}
+
+.carousel-control span { display: none !important }
+
+.carousel .img-responsive { display: inline-block }
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+
+}
+
+@media (min-width: 992px) {
+
+  
+}
+
+@media (min-width: 1170px) {
+
+
+}

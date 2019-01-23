@@ -1,0 +1,56 @@
+/* BASE APPS
+-------------------------------------------------- */
+#outros {
+	background: #000;
+	color: #FFF;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 0 20px;
+}
+
+#outros h3 { font-size: 32px }
+
+.lojas li { 
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 30px;
+}
+
+.lojas li a {
+	height: 41px;
+	display: inline-block;
+	text-indent: -9999px;
+	background: url(../images/aplicativos/lojas.png) no-repeat;
+}
+
+.lojas .play a {
+	width: 116px;
+	background-position: top left;
+}
+
+.lojas .app a {
+	width: 135px;
+	background-position: bottom left;
+}
+
+.apps {
+	margin: 0;
+	padding: 0;
+}
+
+.apps li { 
+	background: #FFF;
+	margin: 0 5px 10px;
+	padding: 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.apps li a {
+	width: 132px;
+	height: 132px;
+	display: block;
+	text-indent: -9999px;
+	outline: none;
+}

@@ -1,0 +1,36 @@
+body {
+	background: #ea4d47;
+}
+#palavras { 
+	color: #FFF;
+	background: #003f7c;
+	font-size: 26px;
+	line-height: 34px;
+	padding: 20px 0;
+}
+
+#palavras h1,
+#palavras p {
+	text-shadow: 1px 2px 1px #000
+}
+
+#palavras h1 { 
+	font-size: 50px;
+	line-height: 48px;
+	font-weight: bold;
+}
+
+#palavras p { margin-bottom: 20px }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+#palavras { background: url(../../images/aplicativos/palavras-do-senhor/bg.jpg) no-repeat #ea4d47 }
+
+#palavras h1 { 
+	font-size: 80px;
+	line-height: 72px;
+}
+
+}
