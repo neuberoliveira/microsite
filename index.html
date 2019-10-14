@@ -35,28 +35,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<script>
-		/*
-		user agent
-			mac desktop
-			Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
-			
-			android
-			Mozilla/5.0 (Linux; Android 9; motorola one vision) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36
-		app version
-			mac dektop
-			5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
-			
-			android
-			5.0 (Linux; Android 9; motorola one vision) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36
-		*/
-
+		const userAgent = navigator.userAgent
+		const appVersion = navigator.appVersion
 		const applinks = {
 			android: 'https://play.google.com/store/apps/details?id=com.primeiramesa2',
 			ios: 'https://itunes.apple.com/br/app/primeira-mesa/id1261413562',
 			desktop: 'https://primeiramesa.com.br',
 		}
-		const userAgent = navigator.userAgent;
-		const appVersion = navigator.appVersion;
 
 		function redirect() {
 			let targetLink
@@ -70,7 +55,6 @@
 				window.location.href = targetLink
 			}
 		}
-
 	</script>
 </head>
 
