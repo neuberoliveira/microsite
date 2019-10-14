@@ -34,15 +34,48 @@
 	<meta name="author" content="Primeira Mesa | https://www.primeiramesa.com.br">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<script>
+		/*
+		user agent
+			mac desktop
+			Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+			
+			android
+			Mozilla/5.0 (Linux; Android 9; motorola one vision) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36
+		app version
+			mac dektop
+			5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36
+			
+			android
+			5.0 (Linux; Android 9; motorola one vision) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/537.36
+		*/
+
+		const applinks = {
+			android: 'https://play.google.com/store/apps/details?id=com.primeiramesa2',
+			ios: 'https://itunes.apple.com/br/app/primeira-mesa/id1261413562',
+			desktop: 'https://primeiramesa.com.br',
+		}
+		const userAgent = navigator.userAgent;
+		const appVersion = navigator.appVersion;
+
+		function redirect() {
+			let targetLink
+			if (userAgent.match(/android/i)) {
+				targetLink = applinks.android
+			} else if (userAgent.match(/i(os|phone|pad)/i)) {
+				targetLink = applinks.ios
+			}
+
+			if (targetLink) {
+				window.location.href = targetLink
+			}
+		}
+
+	</script>
 </head>
 
-<body>
-
-
+<body onload="redirect()">
 	<div id="wrap">
-
-		<!-- Carousel Companies
-    ================================================== -->
 		<div class="row" id="palavras">
 			<div class="container">
 				<div class="col-xs-12 col-md-8">
@@ -50,18 +83,18 @@
 					<h1>Primeira<br>Mesa</h1>
 					<div class="clearfix"></div>
 					<p>Que tal chegar nos restaurantes antes de todo mundo, ter um atendimento exclusivo e ainda pagar 50% menos nos pratos? É só baixar o app do Primeira Mesa. Com ele você não apenas garante reservas com desconto no primeiro horário dos restaurantes, como também busca os estabelecimentos cadastrados mais perto, avalia atendimentos, acompanha seu histórico de reservas, recebe notificações e muito mais.
-					<ul class="lojas list-unstyled">
-						<li class="play">
-							<a href="https://play.google.com/store/apps/details?id=com.primeiramesa2" target="_blank">
-								Play Store
-							</a>
-						</li>
-						<li class="app">
-							<a href="https://itunes.apple.com/br/app/primeira-mesa/id1261413562" target="_blank">
-								App Store
-							</a>
-						</li>
-					</ul>
+						<ul class="lojas list-unstyled">
+							<li class="play">
+								<a href="https://play.google.com/store/apps/details?id=com.primeiramesa2" target="_blank">
+									Play Store
+								</a>
+							</li>
+							<li class="app">
+								<a href="https://itunes.apple.com/br/app/primeira-mesa/id1261413562" target="_blank">
+									App Store
+								</a>
+							</li>
+						</ul>
 				</div>
 				<div class="col-xs-12 col-md-4">
 					<div class="telefone">
@@ -84,9 +117,9 @@
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
 
 </body>
 
