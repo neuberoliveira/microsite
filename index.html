@@ -44,16 +44,14 @@
 		}
 
 		function redirect() {
-			let targetLink
+			let targetLink = applinks.desktop
 			if (userAgent.match(/android/i)) {
 				targetLink = applinks.android
 			} else if (userAgent.match(/i(os|phone|pad)/i)) {
 				targetLink = applinks.ios
 			}
 
-			if (targetLink) {
-				window.location.href = targetLink
-			}
+			window.location.href = targetLink
 		}
 	</script>
 </head>
